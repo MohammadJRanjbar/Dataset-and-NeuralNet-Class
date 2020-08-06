@@ -1,5 +1,7 @@
 # Dataset-and-NeuralNet-Class
 #  Introduction
+this was a homework for dr.jahanshahi's Advanced Programming course and mr Amini (https://github.com/M-H-Amini) designed this homework 
+
 In this homework, you'll get familiar a little with **neural networks**. Also, you'll estimate some functions using them. Isn't that wonderful?! In this way, you must use the **Matrix** class implemented in the last homework by yourself. You can also change it if you think it's necessary. In the end, you must do all your codes in **Matrix**, **dataset**, **result**, **neuralnet** and **aphw3** header and cpp files.
 
 #  Dataset Class
