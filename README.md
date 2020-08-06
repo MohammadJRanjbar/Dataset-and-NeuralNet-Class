@@ -2,8 +2,6 @@
 #  Introduction
 In this homework, you'll get familiar a little with **neural networks**. Also, you'll estimate some functions using them. Isn't that wonderful?! In this way, you must use the **Matrix** class implemented in the last homework by yourself. You can also change it if you think it's necessary. In the end, you must do all your codes in **Matrix**, **dataset**, **result**, **neuralnet** and **aphw3** header and cpp files.
 
-<img src="Formula/meme1.jpg" width="400" class="center" />
-
 #  Dataset Class
 In this class, you'll manage whatever we need for storing our data. Each data element or sample in our dataset is composed of an input part and a target part. We give the inputs to our neural net and we expect it to generate an output similar to the targets. That's all. Since we're trying to train a neural net, we need a dataset. We divide our dataset into 2 parts: **Train** and **Test**. We use the *train* data to teach the neural network about the patterns embedded in our data. After that, we must test our neural network to see if it has learned enough or not. So we use the *test* data. 
 
@@ -162,9 +160,6 @@ Dataset class must have the following member functions too.
   std::cout<<dataset<<std::endl;  \\ dataset is a Dataset object
   ```
   **Question1**: How do you do this? In order to access private variables of the Dataset object, what would you do without using *getter* functions? Explain it.
-  
-<img src="Formula/meme2.jpg" width="400" class="center" />
-
 
 # NeuralNet Class
 In this class, you'll implement a neural network so that you can train it easily. Isn't that amazing?! It's good to first talk a little about neural nets and their training algorithm. To make a long story short, you can look at a neural net like a black box. It gets some inputs and some targets (desired outputs) and tries to find the mapping between the inputs and targets. So that whenever you give it an input, it can generate a proper output for you (if trained well before!). For example, suppose you create a neural net to find out if there is any ball in a given image. The input of your neural net is an image and the output is a number (1 if there is ball in the image and 0 otherwise). You prepare a dataset of many images, some containing a ball. So each sample of your dataset has two parts: the input part is an image and the target part is a number telling that if there is a ball in the image. So your neural net gets the dataset and tries to learn the pattern embedded in it. This process is called **training**. After the neural net has been trained enough, it can say that is there any ball in a given image or not. 
